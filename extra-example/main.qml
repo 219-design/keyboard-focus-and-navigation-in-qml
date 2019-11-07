@@ -11,15 +11,24 @@ Rectangle {
   width: 400
   height: 400
 
-  Image {
+  Pane {
     id: logo
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.top: parent.top
     height: 140
     width: height
 
-    source: blacknwhite.checked ? "blacknwhite.png" : "219Design.png"
-    fillMode: Image.PreserveAspectFit
+    focusPolicy: Qt.StrongFocus
+
+    background: Image {
+      id: logoImage
+      source: blacknwhite.checked ? "blacknwhite.png" : "219Design.png"
+      fillMode: Image.PreserveAspectFit
+    }
+
+    Keys.onSpacePressed: {
+      logoImage.rotation = logoImage.rotation + 90
+    }
   }
 
   Rectangle {
@@ -45,6 +54,7 @@ Rectangle {
 
       onClicked: {
         blacknwhite.checked = false
+        logoImage.rotation = 0
       }
     }
   }
