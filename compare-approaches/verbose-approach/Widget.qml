@@ -20,15 +20,8 @@ FocusScope {
     Text {
       id: label
       anchors.centerIn: parent
+      text: rectangle.activeFocus ? 'I have focus' : ''
     }
     focus: true
-
-    onActiveFocusChanged: {
-      if (activeFocus) {
-        label.text = 'I have focus'
-      } else {
-        label.text = ''
-      }
-    }
   }
 }

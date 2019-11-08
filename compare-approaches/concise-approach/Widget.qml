@@ -21,13 +21,6 @@ Pane {
     anchors.fill: parent
     horizontalAlignment: Text.AlignHCenter
     verticalAlignment: Text.AlignVCenter
-  }
-
-  onActiveFocusChanged: {
-    if (activeFocus) {
-      label.text = 'I have focus'
-    } else {
-      label.text = ''
-    }
+    text: root.activeFocus ? 'I have focus' : ''
   }
 }
