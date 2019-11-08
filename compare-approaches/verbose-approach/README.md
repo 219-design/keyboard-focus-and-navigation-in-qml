@@ -9,4 +9,4 @@
 Refer to the *concise* approach in this same repository to see how to achieve
 identical results with less code and less maintenance burden.
 
-[Concise approach found here.](../consise-approach)
+[Concise approach found here.](../concise-approach)

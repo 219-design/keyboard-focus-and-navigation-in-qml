@@ -21,4 +21,4 @@ Note that we do *nothing* to enable TAB-navigation in the `Button` and the
 Refer to the *verbose* approach to appreciate the code that has been eliminated
 here.
 
-[Verbose approach found here.](../verbose-approach)
+[Verbose approach found here.](../compare-approaches/verbose-approach)
