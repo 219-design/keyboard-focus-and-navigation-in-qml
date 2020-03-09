@@ -39,3 +39,7 @@ qmlscene main.qml
 ### Seeing is believing
 
 ![Animated demo](extra-example/demo.gif?raw=true)
+
+### More
+
+Backstory shared on [our blog](https://www.219design.com/a-tale-of-efficient-keyboard-navigation-code-in-qml/).
